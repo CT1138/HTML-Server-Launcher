@@ -1,12 +1,12 @@
 # BEGIN NODE SERVER SETUP
     FROM node:18-alpine as build
 
-    WORKDIR /backend
+    WORKDIR /app
 
-    COPY package*.json ./
+    COPY backend/package*.json ./
     RUN npm install
 
-    COPY . .
+    COPY backend/ ./
 
     # Environment Variables... 
     # SRVPORT needs to be 3001 unless you edit /frontend/public/script/statistics.js
