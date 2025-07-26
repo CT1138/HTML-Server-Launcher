@@ -1,7 +1,7 @@
 # BEGIN NODE SERVER SETUP
     FROM node:18-alpine as build
 
-    WORKDIR /app
+    WORKDIR /backend
 
     COPY package*.json ./
     RUN npm install
