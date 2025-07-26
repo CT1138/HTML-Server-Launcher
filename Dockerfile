@@ -21,7 +21,7 @@
 
     # Move the website data over
     COPY --from=build /app/public /usr/share/nginx/html
-    COPY nginx.conf /etc/nginx/nginx.conf
+    COPY /frontend/nginx.conf /etc/nginx/nginx.conf
     COPY --from=build /app /app
 
 # END NGINX SETUP
