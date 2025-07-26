@@ -88,7 +88,7 @@ function getRunningServices() {
 
   try {
     if (platform === 'linux') {
-      const output = execSync('systemctl list-units --type=service --state=running --no-pager --no-legend', {
+      const output = execSync('ps aux', {
         encoding: 'utf8'
       });
 
