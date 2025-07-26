@@ -23,5 +23,5 @@
 
 # END NGINX SETUP
 # Finally, expose ports and run setup script
-    EXPOSE 80 3001
+    EXPOSE 80 2999
     CMD ["/bin/sh", "/app/start.sh"]
