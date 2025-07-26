@@ -1,6 +1,10 @@
 # BEGIN NODE SERVER SETUP
     FROM node:18-alpine as build
 
+    # Get Dependencies
+    RUN apk add --no-cache python3 make g++
+
+    # Make working directory
     WORKDIR /app
 
     COPY backend/package*.json ./
