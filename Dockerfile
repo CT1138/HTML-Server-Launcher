@@ -18,7 +18,7 @@
     FROM nginx:alpine
 
     # Get dependencies
-    RUN apk add --no-cache python3 make g++ nodejs npm
+    RUN apk add --no-cache python3 make g++ nodejs
 
     # Move the website data and backend over
     COPY --from=build /frontend-static /usr/share/nginx/html
