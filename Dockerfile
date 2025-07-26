@@ -1,5 +1,5 @@
 # BEGIN NODE SERVER SETUP
-    FROM node:18-alpine as build
+    FROM node:18-alpine AS build
 
     # Get Dependencies
     RUN apk add --no-cache python3 make g++
