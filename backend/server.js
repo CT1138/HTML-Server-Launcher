@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocketServer({ server });
 
-const PORT = 3001;
+const PORT = 2999;
 const PINGINTERVAL = 1000
 
 app.use(express.static('public'));

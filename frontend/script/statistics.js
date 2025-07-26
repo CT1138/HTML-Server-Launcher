@@ -1,6 +1,5 @@
-// Read from environment variables, with defaults as fallback
-const BACKENDHOSTNAME = process.env.SRVHOST || "localhost";
-const PORT = process.env.SRVPORT || 3001;
+const BACKENDHOSTNAME = "localhost";
+const PORT = 2999
 
 document.addEventListener('DOMContentLoaded', () => {
   const statsEl = document.querySelector('.system-stats');

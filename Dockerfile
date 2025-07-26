@@ -12,12 +12,6 @@
 
     COPY backend/ ./
     COPY frontend/ /frontend-static/
-    # Environment Variables... 
-    # SRVPORT needs to be 3001 unless you edit /frontend/public/script/statistics.js
-    ARG SRVPORT=3001
-    ARG SRVHOST=localhost
-    ENV SRVPORT=$SRVPORT
-    ENV SRVHOST=$SRVHOST
 
 # END NODE SETUP
 # BEGIN NGINX SERVER SETUP
