@@ -20,7 +20,7 @@
     # Move the website data and backend over
     COPY --from=build /frontend-static /usr/share/nginx/html
     COPY --from=build /app /app
-
+    COPY start.sh /app/start.sh
 # END NGINX SETUP
 # Finally, expose ports and run setup script
     EXPOSE 80 2999
