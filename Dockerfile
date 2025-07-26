@@ -11,6 +11,7 @@
     RUN npm install
 
     COPY backend/ ./
+    COPY frontend/public/ /usr/share/nginx/html
     # Environment Variables... 
     # SRVPORT needs to be 3001 unless you edit /frontend/public/script/statistics.js
     ARG SRVPORT=3001
@@ -22,10 +23,8 @@
 # BEGIN NGINX SERVER SETUP
     FROM nginx:alpine
 
-    # Move the website data over
-    COPY frontend/public ./public
-    COPY --from=build /app/public /usr/share/nginx/html
-    COPY /frontend/nginx.conf /etc/nginx/nginx.conf
+    # Move the website data and backend over
+    COPY --from=build /frontend-static /usr/share/nginx/html
     COPY --from=build /app /app
 
 # END NGINX SETUP
