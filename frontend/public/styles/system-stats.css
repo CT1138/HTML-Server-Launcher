@@ -1,0 +1,43 @@
+.system-stats {
+  bottom: 0;
+  left: 0;
+  color: #0e0d0d;
+  font-family: monospace, monospace;
+  font-size: 0.9em;
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+  z-index: 9999;
+}
+.system-stats div {
+  white-space: nowrap;
+}
+
+#services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#services-list li {
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #262721;
+  background-color: white;
+  border-radius: 8pt;
+  margin-bottom: 4pt;
+}
+
+.Services-Panel .Window-Menu {
+  height: 400pt;
+}
+
+.Services-Panel .Window-Menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Services-Panel .Window-Menu::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/launcher.css">
+        <link rel="stylesheet" href="styles/selector.css">
+        <link rel="stylesheet" href="styles/system-stats.css">
+    </head>
+    <body>
+        <div class="main-container">
+
+            <div class="Selector-Panel">
+                <h2 class="Window-Header">Romulus Launcher Panel</h2>
+                <div class="Window-Menu" id="Selector-Menu">
+                    <!-- This will be filled by launcher.js  -->
+                    <!-- To add entries, edit ./data/services.json -->
+                </div>
+                <h6 class="Selector-Footer"></h6>
+                <div class="system-stats">
+                    <div><strong>Local IP:</strong> <span id="local-ip">Placeholder...</span></div>
+                    <div><strong>Public IP:</strong> <span id="public-ip">Placeholder...</span></div>
+                    <div><strong>CPU Usage:</strong> <span id="cpu-usage">Placeholder...</span></div>
+                    <div><strong>RAM Usage:</strong> <span id="ram-usage">Placeholder...</span></div>
+                    <div><strong>Free Space:</strong> <span id="free-space">Placeholder...</span></div>
+                </div>
+            </div>
+
+            <div class="Services-Panel">
+                <h2 class="Window-Header">Running Services</h2>
+                <div class="Window-Menu">
+                    <ul id="services-list">
+                        <!-- Dynamically populated -->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script/launcher.js"></script>
+        <script src="script/statistics.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "Title": "TP-Link Gateway",
+    "Url": "http://192.168.68.1",
+    "IconUrl": "data/img/gateway.svg",
+    "Description": "Management page for our TP-Link Deco Network"
+  },
+  {
+    "Title": "Jellyfin",
+    "Url": "http://romulus.local:8096",
+    "IconUrl": "data/img/jellyfin.svg",
+    "Description": "Jellyfin Media Server, repository of movies, music, and tv shows!"
+  },
+  {
+    "Title": "AdGuard Home",
+    "Url": "http://romulus.local:81",
+    "IconUrl": "data/img/adguard-home.svg",
+    "Description": "AdGuard Home DNS Server management panel"
+  },
+  {
+    "Title":"Uptime Kuma",
+    "Url": "http://romulus.local:3001",
+    "IconUrl": "data/img/uptime-kuma.svg",
+    "Description": "Service uptime tracker"
+  },
+  {
+    "Title": "Portainer",
+    "Url": "https://romulus.local:9443/#!/home",
+    "IconUrl": "data/img/portainer.svg",
+    "Description": "Interactive web docker manager"
+  }
+]
