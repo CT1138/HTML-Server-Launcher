@@ -11,7 +11,6 @@
     RUN npm install
 
     COPY backend/ ./
-
     # Environment Variables... 
     # SRVPORT needs to be 3001 unless you edit /frontend/public/script/statistics.js
     ARG SRVPORT=3001
@@ -24,6 +23,7 @@
     FROM nginx:alpine
 
     # Move the website data over
+    COPY frontend/public ./public
     COPY --from=build /app/public /usr/share/nginx/html
     COPY /frontend/nginx.conf /etc/nginx/nginx.conf
     COPY --from=build /app /app
