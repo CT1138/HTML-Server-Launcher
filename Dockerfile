@@ -11,7 +11,7 @@
     RUN npm install
 
     COPY backend/ ./
-    COPY frontend/public/ /usr/share/nginx/html
+    COPY frontend/ /frontend-static/
     # Environment Variables... 
     # SRVPORT needs to be 3001 unless you edit /frontend/public/script/statistics.js
     ARG SRVPORT=3001
